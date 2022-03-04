@@ -9,12 +9,31 @@
       tex: {
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         processEscapes: true,
+        processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
+        processRefs: true, 
         tags: 'ams',
+        extensions: ["AMSmath.js","AMSsymbols.js"],
         macros: {
           sublist: ["{#1_1,\\ldots ,#1_#2}", 2],
           ci: "{\\perp\\!\\!\\!\\perp}",
-          given: ["{\\:#1\\vert\\:}", 1, ""]
-        }
+          given: ["{\\:#1\\vert\\:}", 1, ""],
+          abs: ["{\\lvert #1 \\rvert}", 1],
+          m: ["{m_{#1 \\to #2}}", 2],
+          FACT: "{\\textrm{FACT}}",
+          T: "{\intercal}",
+          bigO: ["{\\mathcal{O}\\left(#1\\right)}", 1],
+          nd: "{\\operatorname{NonDescendants}}",
+          pa: "{\\operatorname{Parents}}",
+          cl: "{\\operatorname{Cl}}",
+          scope: "{\\operatorname{Scope}}",
+          neighbours: "{\\operatorname{Neighbours}}",
+          argmin: "{\\operatorname{\\arg\\!\\min}}",
+
+
+          },
+        environments: {
+          
+          }
       },
       svg: {
         fontCache: 'global'
