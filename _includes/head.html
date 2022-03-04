@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <script>
     MathJax = {
+      loader: {load: ['[tex]/mathtools']},
       tex: {
+        packages: {'[+]': ['mathtools']},
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         processEscapes: true,
         processEnvironments: true, // process \begin{xxx}...\end{xxx} outside math mode
@@ -20,7 +22,7 @@
           abs: ["{\\lvert #1 \\rvert}", 1],
           m: ["{m_{#1 \\to #2}}", 2],
           FACT: "{\\textrm{FACT}}",
-          T: "{\intercal}",
+          T: "{\\intercal}",
           bigO: ["{\\mathcal{O}\\left(#1\\right)}", 1],
           nd: "{\\operatorname{NonDescendants}}",
           pa: "{\\operatorname{Parents}}",
@@ -28,8 +30,7 @@
           scope: "{\\operatorname{Scope}}",
           neighbours: "{\\operatorname{Neighbours}}",
           argmin: "{\\operatorname{\\arg\\!\\min}}",
-
-
+          bm: ["\\boldsymbol{#1}", 1] // poorsman /bm    
           },
         environments: {
           
