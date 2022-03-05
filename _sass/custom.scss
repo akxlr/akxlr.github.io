@@ -1,3 +1,56 @@
 .post-content p {
   text-align: justify;
 }
+
+.theorem {
+  display: block;
+  font-style: italic;
+}
+.theorem:before {
+content: "Theorem. ";
+font-weight: bold;
+font-style: normal;
+}
+.theorem[text]:before, .ex[text]:before {
+content: "Theorem (" attr(text) ") ";
+}
+
+
+.example {
+  display: inline-block;
+  font-style: normal;
+}
+.example:before {
+  content: "Example ";
+  font-weight: bold;
+  font-style: normal;
+}
+.example[text]:before {
+  content: "Example (" attr(text) ") ";
+}
+
+.def {
+  display: inline-block;
+  font-style: normal;
+}
+.def:before {
+  content: "Definition ";
+  font-weight: bold;
+  font-style: normal;
+}
+.def[text]:before {
+  content: "Definition (" attr(text) ") ";
+}
+
+.table {
+  display: inline-block;
+  font-style: normal;
+}
+.table:before {
+  content: "Table ";
+  font-weight: bold;
+  font-style: normal;
+}
+.table[text]:before {
+  content: "Table " attr(text) ": ";
+}
