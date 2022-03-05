@@ -23,6 +23,10 @@ h1.main-title {
 margin-bottom: 6rem;
 }
 
+.fig {
+  margin: auto;
+}
+
 .theorem {
   display: block;
   font-style: italic;
@@ -74,4 +78,21 @@ content: "Theorem (" attr(text) ") ";
 }
 .table[text]:before {
   content: "Table " attr(text) ": ";
+}
+
+.figure {
+  display: inline-block;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+p.figure {
+  text-align: center;
+}
+.figure:before {
+  content: "Figure ";
+  font-weight: bold;
+  font-style: normal;
+}
+.figure[text]:before {
+  content: "Figure " attr(text) ": ";
 }
