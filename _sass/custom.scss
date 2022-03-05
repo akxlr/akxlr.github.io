@@ -2,6 +2,27 @@
   text-align: justify;
 }
 
+.post-title {
+  font-size: 1.5rem;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.post-meta {
+  text-align: right;
+}
+
+h1.main-title {
+  margin: 0;
+  padding: 1rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.mt-wrapper {
+margin-bottom: 6rem;
+}
+
 .theorem {
   display: block;
   font-style: italic;
