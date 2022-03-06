@@ -96,3 +96,31 @@ p.figure {
 .figure[text]:before {
   content: "Figure " attr(text) ": ";
 }
+
+.pulsate {
+animation: pulsate 3s ease-out;
+animation-iteration-count: infinite; 
+opacity: 0.5;
+}
+
+@keyframes pulsate {
+  0% { 
+      opacity: 0.2;
+  }
+  50% { 
+      opacity: 0.75;
+  }
+  100% { 
+      opacity: 0.2;
+  }
+}
+
+.post-content {
+  h1,h2,h3,h4,h5 {
+    a {
+      animation: pulsate 6s ease-out;
+      animation-iteration-count: infinite; 
+      opacity: 0;
+    }
+  }
+}
