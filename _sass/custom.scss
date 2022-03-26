@@ -29,7 +29,7 @@ margin-bottom: 6rem;
 
 .theorem {
   display: block;
-  font-style: italic;
+  // font-style: italic;
 }
 .theorem:before {
 content: "Theorem. ";
@@ -37,7 +37,7 @@ font-weight: bold;
 font-style: normal;
 }
 .theorem[text]:before, .ex[text]:before {
-content: "Theorem (" attr(text) ") ";
+content: "Theorem " attr(text) " ";
 }
 
 
@@ -51,7 +51,7 @@ content: "Theorem (" attr(text) ") ";
   font-style: normal;
 }
 .example[text]:before {
-  content: "Example (" attr(text) ") ";
+  content: "Example " attr(text) " ";
 }
 
 .def {
@@ -95,6 +95,32 @@ p.figure {
 }
 .figure[text]:before {
   content: "Figure " attr(text) ": ";
+}
+
+.lemma {
+  display: inline-block;
+  font-style: normal;
+}
+.lemma:before {
+  content: "lemma ";
+  font-weight: bold;
+  font-style: normal;
+}
+.lemma[text]:before {
+  content: "lemma " attr(text) " ";
+}
+
+.corr {
+  display: inline-block;
+  font-style: normal;
+}
+.corr:before {
+  content: "Corollary ";
+  font-weight: bold;
+  font-style: normal;
+}
+.corr[text]:before {
+  content: "Corollary " attr(text) " ";
 }
 
 .pulsate {
