@@ -90,7 +90,7 @@ p.figure {
 }
 .figure:before {
   content: "Figure ";
-  font-weight: bold;
+  font-weight: normal;
   font-style: normal;
 }
 .figure[text]:before {
